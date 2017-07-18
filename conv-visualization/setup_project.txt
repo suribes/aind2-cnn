@@ -1,0 +1,46 @@
+ssh aind2@X.X.X.X
+
+cd aind/aind2-cnn
+source activate aind2
+jupyter notebook --ip=0.0.0.0 --no-browser
+
+http://54.171.188.190:8888/tree?token=c5111591bc7fc071a78951c4b90ed397764ab5e13e1b52f1
+
+http://cs231n.github.io/understanding-cnn/
+https://aiexperiments.withgoogle.com/what-neural-nets-see
+https://medium.com/merantix/picasso-a-free-open-source-visualizer-for-cnns-d8ed3a35cfc5
+https://blog.keras.io/how-convolutional-neural-networks-see-the-world.html
+https://www.youtube.com/watch?v=XatXy6ZhKZw
+https://blog.openai.com/adversarial-example-research/
+
+
+Instructions
+
+1    Follow the Udacity instructions to launch an EC2 GPU instance with the udacity-aind2 AMI. All of the remaining instructions should be executed in the EC2 instance.
+2    Activate the new environment: source activate aind2
+3    Clone the dog-project GitHub repository, and navigate to the downloaded folder:
+
+    git clone https://github.com/udacity/dog-project.git; cd dog-project
+
+4    Download and unzip the dog dataset:
+
+    wget https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip; unzip dogImages.zip; rm dogImages.zip
+
+5    Download and unzip the human dataset:
+
+    wget http://vis-www.cs.umass.edu/lfw/lfw.tgz; tar -xvzf lfw.tgz; rm lfw.tgz
+
+6    Download and unzip the VGG-16 bottleneck features for the dog dataset:
+
+    cd bottleneck_features; wget https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz; cd ..
+
+7    Start Jupyter: jupyter notebook --ip=0.0.0.0 --no-browser
+8    Look at the output in the window, and find the line that looks like the following:
+
+    Copy/paste this URL into your browser when you connect for the first time to login with a token: 
+    http://0.0.0.0:8888/?token=3156e...
+
+9    Copy and paste the complete URL into the address bar of a web browser (Firefox, Safari, Chrome, etc). Before navigating to the URL, replace 0.0.0.0 in the URL with the "IPv4 Public IP" address from the EC2 Dashboard. Press Enter.
+10    Click on dog_app.ipynb. Follow the instructions in the notebook.
+
+http://54.154.154.136:8888/?token=74f837017c9164718e09651cade8e866c381fb7b04a084b1
